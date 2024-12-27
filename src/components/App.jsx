@@ -24,9 +24,7 @@ function App() {
   return (
     <div>
       <Header />
-
       <CreateArea onAdd={addNewNotes} />
-
       {notes.map((note, index) => (
         <Note
           key={index}
@@ -36,7 +34,6 @@ function App() {
           onDelete={deleteNotes}
         />
       ))}
-
       <Footer />
     </div>
   );
